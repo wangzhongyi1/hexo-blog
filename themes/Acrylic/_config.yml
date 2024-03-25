@@ -69,10 +69,10 @@ nav:
   left:
     enable: true
     menu:
-      我的:
-        博客:
-          icon: /img/avatar.webp
-          url: /
+      # 我的:
+      #   博客:
+      #     icon: /img/avatar.webp
+      #     url: /
 # 导航栏内容
   menu:
     文库:
@@ -90,19 +90,25 @@ nav:
     友链:
       url: false
       child:
-        友链鱼塘:
-          url: /fcircle/
-          icon: fas fa-fish-fins
-        友情链接:
-          url: /links/
-          icon: fas fa-user-group
-        宝藏博主:
-          url: javascript:travelling()
-          icon: fas fa-bus
+        bootcss:
+          url: https://www.bootcss.com
+          icon: fa-brands fa-bootstrap 
+        nodejs:
+          url: https://nodejs.org
+          icon: fa-brands fa-node-js
+        # 友链鱼塘:
+        #   url: /fcircle/
+        #   icon: fas fa-fish-fins
+      #   友情链接:
+      #     url: /links/
+      #     icon: fas fa-user-group
+      #   宝藏博主:
+      #     url: javascript:travelling()
+      #     icon: fas fa-bus
 
 # 导航栏右侧快捷菜单
   right: # @todo 允许用户自定义
-    travellings: true   #开往
+    travellings: false   #开往
     random: true        #
     console: true       #控制台
 
@@ -190,9 +196,12 @@ aside:
     # content: 这有关于<b>开发</b>、<b>技术</b>相关的问题和看法，还有对于动漫的一些<b>杂评</b>。<br>相信你可以在这里找到对你有用的知识和教程。
     content: 说明：本站所有资源均来源于互联网，<b>全部免费</b>！部分具有<b>时效性</b>！<br><br>相信你可以在这里找到对你有用的知识和教程。
     information:
-      Github:
-        icon: fa-brands fa-github
-        url: https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next
+      # Github:
+      #   icon: fa-brands fa-github
+      #   url: https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next
+      Telegram:
+        icon: fa-brands fa-telegram
+        url: https://t.me/lvlvwzy
       Mail:
         icon: fa-solid fa-envelope
         url: mailto:a@nalex.top
@@ -247,18 +256,17 @@ footer:
       文章归档: /archives/
       文章分类: /categories/
       # 文章标签: /tags/
-      友链: /link/
+      # 友链: /link/
     服务:
-      51la统计: https://51.la/
       百度统计: https://tongji.baidu.com/
       TianliCDN: https://ql.tianli0.top/
     # Acrylic:
     #   主题官网: https://acrylic.zhheo.com/
     #   Github: https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic
     #   Heo: https://blog.zhheo.com/
-    推荐友链:
-      Heo: https://blog.zhheo.com/
-      Akilar: https://akilar.top
+    友链:
+      百度: https://www.baidu.com/
+      谷歌: https://www.google.com/
 
   randomlink: false
 
