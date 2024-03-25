@@ -23,7 +23,10 @@
 .meta-secondline > span{
     opacity: .6;
     transition: .3s;
-    margin-right: 1.1rem;
+  }
+  
+.meta-secondline > span.mr {
+  margin-right: 1.1rem;
 }
 
 #category #category-bar{

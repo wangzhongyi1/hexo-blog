@@ -10,17 +10,57 @@
 site:
   name:                   # 左上角显示内容
     class:  text          #i_class/text/img 
-    custom: Acrylic       #自定义内容
-  siteIcon: /img/avatar.webp # 网页icon
+    custom: A级资源网      #自定义内容
+  siteIcon: /img/favicon.jpg # 网页icon
   icon: /img/avatar.webp     # 页脚的icon、加载动画默认的icon
   categories:
     data:
-      - path: https://www.baidu.com
-        name: 百度
+      - name: 🔥热门
+        path: /tags/热门/
+      - name: 工具
+        path: /tags/工具/
+        children:
+          - name: 在线小工具
+            path: /tags/在线小工具/
+          - name: 下载小工具
+            path: /tags/下载小工具/
+      - name: 影音
+        path: /tags/影音/
+        children:
+          - name: 视频
+            path: /tags/视频/
+          - name: 音乐
+            path: /tags/音乐/
+      - name: 软件
+        path: /tags/软件/
+        children:
+          - name: mac软件
+            path: /tags/mac软件/
+          - name: ios软件
+            path: /tags/ios软件/
+          - name: windows软件
+            path: /tags/windows软件/
+          - name: 安卓软件
+            path: /tags/安卓软件/
+      - name: 网赚
+        path: /tags/网赚/
+      - name: 课程
+        path: /tags/课程/
+        children:
+          - name: 大人学习课程
+            path: /tags/大人学习课程/
+      - name: 其他
+        path: /tags/其他/
   tags:
     data:
+      - name: 谷歌444
+        path: https://www.baidu.com
+  posts:
+    data:
       - path: https://www.baidu.com
-        name: 百度
+        title: SAP HANA项目过程中优化分析以及可行性验证
+        cover: /img/avatar.webp
+        recommend: true
   icp:                       # ICP
 
 # 导航栏
@@ -44,9 +84,9 @@ nav:
         全部分类:
           url: /categories/
           icon: fas fa-cube
-        全部标签:
-          url: /tags/
-          icon: fas fa-tags
+        # 全部标签:
+        #   url: /tags/
+        #   icon: fas fa-tags
     友链:
       url: false
       child:
@@ -71,8 +111,9 @@ hometop:
   bbtime: false
   banner:
     enable: true
-    title: 分享设计<br>与科技生活
-    url: blog.zhheo.com
+    # title: 分享设计<br>与科技生活
+    title: 探索未知领域的<br>神秘宝库！
+    url: www.abfunny.com
     icon:
       AE:
         img: /img/icon/ae.png
@@ -113,9 +154,9 @@ hometop:
 
   categoryGroup:
     G1:
-      name: Acrylic
+      name: 在线工具
       icon: fas fa-dove
-      url: /tags/Acrylic/
+      url: /tags/在线小工具/
     G2:
       name: 热门文章
       icon: fas fa-burn
@@ -123,13 +164,13 @@ hometop:
     G3:
       name: 实用教程
       icon: fas fa-book
-      url: /tags/教程/
+      url: /tags/大人学习课程/
 
   recommendList:
-    sup: 置顶文章
-    title: 让Acrylic成为您的Hexo主题
+    sup: 我们的slogan
+    title: 资源共享，让生活更美好！
     url: /tags/热门/
-    img: /img/acrylic.png
+    img: /img/stocksnap.jpg
     color: '#006a73'
 
 # 个人卡片
@@ -146,7 +187,8 @@ aside:
 
   card:
     avatar: 
-    content: 这有关于<b>开发</b>、<b>技术</b>相关的问题和看法，还有对于动漫的一些<b>杂评</b>。<br>相信你可以在这里找到对你有用的知识和教程。
+    # content: 这有关于<b>开发</b>、<b>技术</b>相关的问题和看法，还有对于动漫的一些<b>杂评</b>。<br>相信你可以在这里找到对你有用的知识和教程。
+    content: 说明：本站所有资源均来源于互联网，<b>全部免费</b>！部分具有<b>时效性</b>！<br><br>相信你可以在这里找到对你有用的知识和教程。
     information:
       Github:
         icon: fa-brands fa-github
@@ -166,7 +208,7 @@ aside:
     backface:
       title: 扫一扫
       desc: 获取最新信息和帮助
-      img: /img/qqgroup.png
+      img: /img/my-qq.jpeg
 
   toc: 
     post: true
@@ -186,34 +228,34 @@ aside:
 footer:
   information:
     left:
-      Github:
-        icon: fa-brands fa-github
-        url: /
+      # Github:
+      #   icon: fa-brands fa-github
+      #   url: /
       Mail:
         icon: fa-solid fa-envelope
-        url: /
+        url: mailto:lvlv49307@gmail.com
     right:
-      网易云:
-        icon: fa-solid fa-music
-        url: /
+      Telegram:
+        icon: fa-brands fa-telegram
+        url: https://t.me/lvlvwzy
       bilibili:
-        icon: fa-brands fa-bilibili
-        url: /
+        icon: fa-brands fa-twitter
+        url: https://x.com/wang_yi67218
 
   group:
     导航:
       文章归档: /archives/
       文章分类: /categories/
-      文章标签: /tags/
+      # 文章标签: /tags/
       友链: /link/
     服务:
       51la统计: https://51.la/
       百度统计: https://tongji.baidu.com/
       TianliCDN: https://ql.tianli0.top/
-    Acrylic:
-      主题官网: https://acrylic.zhheo.com/
-      Github: https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic
-      Heo: https://blog.zhheo.com/
+    # Acrylic:
+    #   主题官网: https://acrylic.zhheo.com/
+    #   Github: https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic
+    #   Heo: https://blog.zhheo.com/
     推荐友链:
       Heo: https://blog.zhheo.com/
       Akilar: https://akilar.top
@@ -245,8 +287,8 @@ post:
     copyright: 原创
   meta:
     date: true
-    updated: false
-    locate: true
+    updated: true
+    locate: false
     wordcount: false
     readtime: false
     pv: false
@@ -265,7 +307,7 @@ about: false
 
 # 404页面
 errorpage:
-  img: /img/acrylic.png
+  img: /img/404.jpg
   text: =awa= 页面走丢了
   recommendList: true
 
@@ -302,8 +344,8 @@ thirdparty:
       # hits:
       #   per_page: 6
     local_search:
-      enable: false
-      preload: false
+      enable: true
+      preload: true
       CDN:
     
   aplayer:

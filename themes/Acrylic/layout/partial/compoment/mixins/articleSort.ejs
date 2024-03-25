@@ -1,8 +1,4 @@
-<% let year %>
-<% page.posts.data.forEach(post => { %>
-    <% if(year !== moment(post.date).year()){ year = moment(post.date).year() %>
-        <div class="article-sort-item year"><%= year %></div>
-    <% } %>
+<% page.posts.data.forEach((post, index) => { %>
     <div class="article-sort-item">
         <a class="article-sort-item-img" href="<%= url_for(post.path) %>" title="<%= post.title %>">
             <img src="<%= post.cover %>"
@@ -11,7 +7,7 @@
         <div class="article-sort-item-info">
             <a class="article-sort-item-title" href="<%= url_for(post.path) %>" title="<%= post.title %>"
                 onclick="window.event.cancelBubble=true;">
-                <%= post.title %>
+                <%= post.title %>(<%= relative_date(post.date) %>)
             </a>
             <div class="article-sort-item-tags">
                 <% post.tags.data.forEach(tags => { %>

@@ -1,0 +1,23 @@
+.article-profile {
+    font-size: 14px;
+    -webkit-line-clamp: 3;
+    /* 定义文本的行数 */
+    padding-top: 6px;
+}
+@media screen and (max-width: 768px) {
+    .article-profile {
+        font-size: 12px;
+        -webkit-line-clamp: 2;
+        /* 定义文本的行数 */
+        padding-top: 0;
+    }
+}
+
+.multiline-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.5em;
+}

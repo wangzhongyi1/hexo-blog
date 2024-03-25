@@ -12,14 +12,12 @@
                     <span class="original"><%= categories.name %></span>
                 <% }) %>
             </div>
-            <a class="article-title" href="<%= url_for(post.path) %>" title="<%= post.title %>">
-                <%= post.title %>
-            </a>
+            <a class="article-title" href="<%= url_for(post.path) %>" title="<%= post.title %>"><%= post.title %></a>
+            <a href="<%= url_for(post.path) %>" class="article-profile multiline-ellipsis"><%= post.frofile %></a>
         </div>
         <div class="article-meta-wrap">
             <span class="post-meta-date">
                 <i class="fa-regular fa-clock"></i>
-                <!-- <time datetime="<%= moment(post.date).format() %>"></time> -->
                 <span><%= relative_date(post.date) %></span>
             </span>
             <span class="post-meta-date">
