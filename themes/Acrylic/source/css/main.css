@@ -3791,7 +3791,7 @@ html {
   padding: 0.3rem 1rem;
 }
 
-#nav .menus_items .menus_item .menus_item_child li a i:not(.fa-brands) {
+#nav .menus_items .menus_item .menus_item_child li a i {
   font-size: 1rem;
   margin-right: 8px;
 }
@@ -11936,6 +11936,18 @@ a.bb-link-info:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  #heo-footer {
+    padding: 0;
+    text-align: center;
+  }
+
+  #heo-footer .footer-item {
+    margin: 0.38rem 0;
+    text-align: center;
+  }
 }
 
 #heo-footer .footer-item:hover {
