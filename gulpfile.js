@@ -37,9 +37,14 @@ function minJs() {
     .pipe(dest('dist'))
 }
 
-function removeImg() {
+function moveImg() {
   return src('public/img/**/*')
     .pipe(dest('dist/img'))
 }
 
-exports.default = series(cleanDir, removeImg, minCss, minJs, minHtml);
+function moveXML() {
+  return src('public/*.xml')
+    .pipe(dest('dist'))
+}
+
+exports.default = series(cleanDir, moveXML, moveImg, minCss, minJs, minHtml);
