@@ -1,0 +1,37 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main] # 触发任务的分支
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: npm install
+        run: npm install
+
+      - name: npm build
+        run: npm run build
+
+      # 部署到远程云服务器的指定目录
+      - name: deploy
+        uses: easingthemes/ssh-deploy@v2.1.1
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }} # 服务器私钥
+          ARGS: "-avzr --delete" # 清空服务器目标目录下的文件
+          SOURCE: "./dist/" # 要复制的打包后的目录
+          REMOTE_HOST: ${{ secrets.HOST }} # 服务器地址
+          REMOTE_USER: "root"
+          TARGET: "/usr/share/nginx/html/dist" # 目标目录
+          EXCLUDE: "/node_modules/"
