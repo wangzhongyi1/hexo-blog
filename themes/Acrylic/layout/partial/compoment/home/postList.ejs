@@ -1,4 +1,4 @@
-<div class="recent-post-item" onclick="pjax.loadUrl('/<%= post.path %>')">
+<div class="recent-post-item" onclick="handAddViewPV('<%= moment(post.date).format(`YYYY-MM-DD HH:mm:ss`) %>', '<%= post.title %>', '/<%= post.path %>')">
     <div class="post_cover left_radius">
         <a href="<%= url_for(post.path) %>" title="<%= post.title %>">
             <img class="post_bg" alt="<%= post.title %>" src="<%= post.cover %>">
@@ -22,7 +22,7 @@
             </span>
             <span class="post-meta-date">
                 <i class="fa-solid fa-eye"></i>
-                <span>13.4k</span>
+                <span id="viewpv_<%= moment(post.date).format(`YYYY-MM-DD HH:mm:ss`) %><%= post.title %>"></span>
             </span>
         </div>
     </div>

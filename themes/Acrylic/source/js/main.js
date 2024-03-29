@@ -439,6 +439,29 @@ class tabs {
     }
 }
 
+const host = 'http://www.abfunny.cc:3000';
+// 获取首页文章的浏览量
+function getContentPv() {
+    const nodeList = document.querySelectorAll('span[id^=viewpv_]');
+    const ids = [];
+    nodeList.forEach(v => { ids.push(v.id.replace('viewpv_', '')) });
+    window.fetch(`${host}/querypv?ids=${ids.join(',')}`)
+    .then(r => r.json())
+    .then(r => {
+        ids.forEach(v => {
+            const ran = Math.ceil(Math.random() * 1000);
+            const num = r[v] ? ran + r[v] : ran;
+            document.querySelector(`span[id='viewpv_${v}']`).innerHTML = num;
+        });
+    });
+}
+
+window.handAddViewPV = function (date, title, path) {
+    const id = date + title;
+    // 请求接口
+    window.fetch(`${host}/addpv?id=${id}`)
+    pjax.loadUrl(path)
+}
 
 window.refreshFn = () => {
     scrollFn()
@@ -466,6 +489,7 @@ window.refreshFn = () => {
         if (document.getElementById('album_detail')) acrylic.reflashEssayWaterFall()
     }
     GLOBALCONFIG.covercolor && coverColor()
+    getContentPv()
 }
 
 acrylic.initTheme()
