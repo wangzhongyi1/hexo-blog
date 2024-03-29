@@ -12,6 +12,25 @@ function format(date) {
   return new Date(utcTime + 3600000 * timeZone);
 }
 
+/**
+ * 东八区上午7点，东九区上午8点
+ * @param {Date} date 东八区时间
+ * @returns timestamp
+ */
+function format2(date) {
+	const current = new Date();
+	// 获取当前机器所属时区
+  const timeZone = 0 - current.getTimezoneOffset() / 60;
+	// 和东八区相差多少个时区
+	const dist = 8 - timeZone;
+	// 一个时区60分钟，相差多少毫秒
+	const totalss = 60 * 60 * 1000 * Math.abs(dist);
+
+	const target = new Date(date);
+
+	return target.getTime() + totalss
+}
+
 hexo.extend.helper.register("recent_data", function (date) {
-  return moment(format(date)).fromNow();
+  return moment(format2(date)).fromNow();
 });
