@@ -22,8 +22,8 @@ site:
         children:
           - name: 在线小工具
             path: /tags/在线小工具/
-          - name: 下载小工具
-            path: /tags/下载小工具/
+          - name: AI工具
+            path: /tags/AI工具/
       - name: 影音
         path: /tags/影音/
         children:
