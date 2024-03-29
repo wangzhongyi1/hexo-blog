@@ -18,13 +18,16 @@ function format(date) {
  * @returns timestamp
  */
 function format2(date) {
+	console.log('东八区时间：', date);
 	const current = new Date();
 	// 获取当前机器所属时区
   const timeZone = 0 - current.getTimezoneOffset() / 60;
+	console.log('获取当前机器所属时区：', timeZone);
 	// 和东八区相差多少个时区
 	const dist = 8 - timeZone;
 	// 一个时区60分钟，相差多少毫秒
 	const totalss = 60 * 60 * 1000 * Math.abs(dist);
+	console.log('时区相差多少毫秒：', totalss);
 
 	const target = new Date(date);
 
@@ -32,5 +35,7 @@ function format2(date) {
 }
 
 hexo.extend.helper.register("recent_data", function (date) {
-  return moment(format2(date)).fromNow();
+	const time = format2(date);
+	console.log('机器时间：', time);
+  return moment(time).fromNow();
 });
