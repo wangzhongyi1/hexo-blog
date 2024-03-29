@@ -26,7 +26,7 @@ function format2(date) {
 	// 和东八区相差多少个时区
 	const dist = 8 - timeZone;
 	// 一个时区60分钟，相差多少毫秒
-	const totalss = 60 * 60 * 1000 * Math.abs(dist);
+	const totalss = 60 * 60 * 1000 * dist;
 	console.log('时区相差多少毫秒：', totalss);
 
 	const target = new Date(date);
