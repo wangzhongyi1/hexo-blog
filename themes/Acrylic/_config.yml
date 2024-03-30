@@ -44,11 +44,10 @@ site:
             path: /tags/安卓软件/
       - name: 网赚
         path: /tags/网赚/
-      - name: 课程
-        path: /tags/课程/
-        children:
-          - name: 大人学习课程
-            path: /tags/大人学习课程/
+      - name: 教程
+        path: /tags/教程/
+      - name: 生存之道
+        path: /tags/生存之道
       - name: 福利
         path: /tags/福利/
   tags:

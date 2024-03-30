@@ -2,7 +2,7 @@
 title: 郑欧耶 民谣吉他课程入门
 date: 2024-03-30 15:22:45
 tags:
-    - 课程
+    - 教程
 frofile: 课程信息 郑欧耶 民谣吉他课程入门+进阶139集，夸克网盘资源下载。
 cover: /img/card-img/jtmykec_s.jpg
 ---
