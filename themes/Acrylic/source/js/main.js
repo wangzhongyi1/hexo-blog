@@ -439,7 +439,7 @@ class tabs {
     }
 }
 
-const host = 'http://www.abfunny.cc:3000';
+const host = '/api';
 // 获取首页文章的浏览量
 function getContentPv() {
     const nodeList = document.querySelectorAll('span[id^=viewpv_]');
