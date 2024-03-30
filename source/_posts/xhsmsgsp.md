@@ -29,7 +29,7 @@ cover: /img/card-img/xhsmsgsp_s.jpg
 
 ## 截图
 
-![](/img/card-img/xhsmsgsp.webp)
+![](/img/card-img/xhsmsgsp.jpg)
 
 ## 参与方式
 

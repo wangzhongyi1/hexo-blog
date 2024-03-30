@@ -13,7 +13,7 @@ cover: /img/card-img/jtmykec_s.jpg
 
 ## 截图
 
-![](/img/card-img/jtmykec.webp)
+![](/img/card-img/jtmykec.jpg)
 
 ## 参与方式
 
