@@ -49,8 +49,8 @@ site:
         children:
           - name: 大人学习课程
             path: /tags/大人学习课程/
-      - name: 其他
-        path: /tags/其他/
+      - name: 福利
+        path: /tags/福利/
   tags:
     data:
       - name: 谷歌444
