@@ -375,7 +375,8 @@ comment:
 # 插入额外代码 如：统计，广告等
 extends: 
   head: # 在head中插入
-    # - <script></script>
+    - <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BXB1NFBFS"></script>
+    - <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-0BXB1NFBFS');</script>
   body: # 在body中插入
 
 # 非必要勿动
