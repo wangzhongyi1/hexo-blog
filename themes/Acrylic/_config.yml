@@ -26,11 +26,6 @@ site:
             path: /tags/AI工具/
       - name: 影音
         path: /tags/影音/
-        children:
-          - name: 视频
-            path: /tags/视频/
-          - name: 音乐
-            path: /tags/音乐/
       - name: 软件
         path: /tags/软件/
         children:
