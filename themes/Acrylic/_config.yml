@@ -56,9 +56,9 @@ site:
         path: https://www.baidu.com
   posts:
     data:
-      - path: https://www.baidu.com
-        title: SAP HANA项目过程中优化分析以及可行性验证
-        cover: /img/avatar.webp
+      - path: /ddrzmj
+        title: 懂懂日赚600元 PDF，是一本创业秘籍教程，作者是董俊峰， 揭开网络赚钱的秘密
+        cover: /img/card-img/ddrzmi_s.jpg
         recommend: true
   icp:                       # ICP
 
@@ -375,6 +375,7 @@ comment:
 # 插入额外代码 如：统计，广告等
 extends: 
   head: # 在head中插入
+    - <meta name="baidu-site-verification" content="codeva-vSC8WCo6lI" />
     - <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BXB1NFBFS"></script>
     - <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-0BXB1NFBFS');</script>
   body: # 在body中插入
