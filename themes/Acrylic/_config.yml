@@ -164,7 +164,7 @@ hometop:
     G3:
       name: 实用教程
       icon: fas fa-book
-      url: /tags/大人学习课程/
+      url: /tags/教程/
 
   recommendList:
     sup: 我们的slogan
@@ -187,7 +187,6 @@ aside:
 
   card:
     avatar: 
-    # content: 这有关于<b>开发</b>、<b>技术</b>相关的问题和看法，还有对于动漫的一些<b>杂评</b>。<br>相信你可以在这里找到对你有用的知识和教程。
     content: 说明：本站所有资源均来源于互联网，<b>全部免费</b>！部分具有<b>时效性</b>！<br><br>相信你可以在这里找到对你有用的知识和教程。
     information:
       # Github:
