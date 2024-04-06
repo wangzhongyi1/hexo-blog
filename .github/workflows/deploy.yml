@@ -31,6 +31,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }} # 服务器私钥
           ARGS: "-avzr --delete" # 清空服务器目标目录下的文件
           SOURCE: "dist/" # 要复制的打包后的目录
-          REMOTE_HOST: ${{ secrets.HOST }} # 服务器地址
-          REMOTE_USER: ${{ secrets.USER }}
+          REMOTE_HOST: ${{ secrets.HOST }} # 服务器地址ip
+          REMOTE_USER: ${{ secrets.USER }} # 服务器登陆的用户名
           TARGET: "/usr/share/nginx/html/dist" # 目标目录
