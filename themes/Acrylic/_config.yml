@@ -51,6 +51,14 @@ site:
         path: https://www.baidu.com
   posts:
     data:
+      - path: /tiktokhw
+        title: 最新版TikTok 抖音国际版解锁版 v34.0.3 去广告 免拔卡
+        cover: /img/card-img/tiktok_s.jpg
+        recommend: true
+      - path: /aigoodssug
+        title: AI好物可以根据输入内容给你推荐商品
+        cover: /img/card-img/aigoodssug_s.jpg
+        recommend: true
       - path: /ddrzmj
         title: 懂懂日赚600元 PDF，是一本创业秘籍教程，作者是董俊峰， 揭开网络赚钱的秘密
         cover: /img/card-img/ddrzmi_s.jpg
