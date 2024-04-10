@@ -2,9 +2,10 @@
 title: {{ title }}
 date: {{ date }}
 updated: {{ date }}
+cover: /img/card-img/{{ title }}_s.jpg
 tags:
+    - 热门
 frofile:
-cover:
 ---
 
 ## title
@@ -13,7 +14,7 @@ xxx
 
 ## 截图
 
-![](/img/card-img/aliyunp.png)
+![](/img/card-img/aaaa.png)
 
 ## 参与方式
 
