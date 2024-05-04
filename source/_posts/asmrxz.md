@@ -2,7 +2,7 @@
 title: 免费高品质助眠视频音频
 cover: /img/card-img/asmrxz_s.jpg
 tags:
-  - 热门
+  - 工具
   - 在线小工具
 date: 2024-04-29 22:27:49
 updated: 2024-04-29 22:27:49
